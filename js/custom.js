@@ -1,29 +1,54 @@
-jQuery(document).ready(function($){
-	// browser window scroll (in pixels) after which the "back to top" link is shown
-	var offset = 300,
-		//browser window scroll (in pixels) after which the "back to top" link opacity is reduced
-		offset_opacity = 1200,
-		//duration of the top scrolling animation (in ms)
-		scroll_top_duration = 700,
-		//grab the "back to top" link
-		$back_to_top = $('.cd-top');
+/* HTML document is loaded. DOM is ready.
+-------------------------------------------*/
+$(function(){
 
-	//hide or show the "back to top" link
-	$(window).scroll(function(){
-		( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
-		if( $(this).scrollTop() > offset_opacity ) { 
-			$back_to_top.addClass('cd-fade-out');
-		}
-	});
+    /* start typed element */
+    //http://stackoverflow.com/questions/24874797/select-div-title-text-and-make-array-with-jquery
+    var subElementArray = $.map($('.sub-element'), function(el) { return $(el).text(); });    
+    $(".element").typed({
+        strings: subElementArray,
+        typeSpeed: 30,
+        contentType: 'html',
+        showCursor: false,
+        loop: true,
+        loopCount: true,
+    });
+    /* end typed element */
 
-	//smooth scroll to top
-	$back_to_top.on('click', function(event){
-		event.preventDefault();
-		$('body,html').animate({
-			scrollTop: 0 ,
-		 	}, scroll_top_duration
-		);
-	});
+    /* Smooth scroll and Scroll spy (https://github.com/ChrisWojcik/single-page-nav)    
+    ---------------------------------------------------------------------------------*/ 
+    $('.templatemo-nav').singlePageNav({
+        offset: $(".templatemo-nav").height(),
+        filter: ':not(.external)',
+        updateHash: false
+    });
 
+    /* start navigation top js */
+    $(window).scroll(function(){
+        if($(this).scrollTop()>58){
+            $(".templatemo-nav").addClass("sticky");
+        }
+        else{
+            $(".templatemo-nav").removeClass("sticky");
+        }
+    });
+    
+    /* Hide mobile menu after clicking on a link
+    -----------------------------------------------*/
+    $('.navbar-collapse a').click(function(){
+        $(".navbar-collapse").collapse('hide');
+    });
+    /* end navigation top js */
+
+    $('body').bind('touchstart', function() {});
+
+    /* wow
+    -----------------*/
+    new WOW().init();
 });
 
+/* start preloader */
+$(window).load(function(){
+	$('.preloader').fadeOut(1000); // set duration in brackets    
+});
+/* end preloader */
