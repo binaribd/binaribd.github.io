@@ -11,7 +11,7 @@
     <title>Binary Logic Information Technology,Dhaka.</title>
 	
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
@@ -21,6 +21,17 @@
 </head>
 
 <body>
+	<!--
+	    Start Preloader
+	    ==================================== -->
+		<!-- <div id="loading-mask">
+			<div class="loading-img">
+				<img alt="Preloader" src="img/lightbox/preloader.gif"/>
+			</div>
+		</div> -->
+        <!--
+        End Preloader
+        ==================================== -->
 	<!--  Header-top Starts Here -->
     <section class="header-top">           
         <nav class="navbar navbar-expand-lg bg-dark p-0">    
@@ -36,7 +47,7 @@
                         <a class="nav-link white-text" href="#">Follow Us</a>
                       </li>
                       <li class="nav-item iconhover social">
-                        <a class="nav-link white-text" href="#"><i class="fa fa-envelope"></i> info@blit.ab.bd</a>
+                        <a class="nav-link white-text" href="#"><i class="fa fa-envelope"></i> info@blit.edu.bd</a>
                       </li> 
                 </ul>
 
@@ -52,10 +63,98 @@
 		</nav>
     </section>          
 <!-- Header-top Starts Here -->
+
+<!-- login and registration form strats -->
+        <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-bold">Sign in</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body mx-3">
+                <div class="md-form">
+                    <i class="fa fa-envelope prefix grey-text"></i>
+                    <input type="email" id="defaultForm-email" class="form-control validate">
+                    <label data-error="wrong" data-success="right" for="defaultForm-email">Username</label>
+                </div>
+
+                <div class="md-form">
+                    <i class="fa fa-lock prefix grey-text"></i>
+                    <input type="password" id="defaultForm-pass" class="form-control validate">
+                    <label data-error="wrong" data-success="right" for="defaultForm-pass">Password</label>
+                </div>
+				<div class="form-check mb-2 mr-sm-2 mb-sm-0">
+                        <label class="form-check-label">
+                            <input class="form-check-input text-center" name="remember"
+                                   type="checkbox" >
+                            <span style="padding-bottom: .15rem">Remember me</span>
+                        </label>
+                    </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <button class="btn btn-default" >Login</button>
+				<a class="" href="/password/reset">Forgot Your Password?</a>
+            </div>
+			
+        </div>
+    </div>
+</div> <!-- login ends -->
+		
+<div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-bold" >Sign up</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body mx-3">
+                <div class="md-form">
+                    <i class="fa fa-user prefix grey-text"></i>
+                    <input type="text" id="orangeForm-name" class="form-control validate">
+                    <label data-error="wrong" data-success="right" for="orangeForm-name">Your Name</label>
+                </div>
+                <div class="md-form">
+                    <i class="fa fa-envelope prefix grey-text"></i>
+                    <input type="email" id="orangeForm-email" class="form-control validate">
+                    <label data-error="wrong" data-success="right" for="orangeForm-email">Email Address</label>
+                </div>
+				
+				<div class="text-center">
+                    <label class="custom-control custom-radio">
+					<input id="radio1" name="radio" type="radio" class="custom-control-input">
+					<span class="custom-control-indicator"></span>
+					<span class="custom-control-description">Male</span>
+				</label>
+				<label class="custom-control custom-radio">
+					<input id="radio2" name="radio" type="radio" class="custom-control-input">
+					<span class="custom-control-indicator"></span>
+					<span class="custom-control-description">Female</span>
+				</label>
+                </div>
+				
+                <div class="md-form">
+                    <i class="fa fa-lock prefix grey-text"></i>
+                    <input type="password" id="orangeForm-pass" class="form-control validate">
+                    <label data-error="wrong" data-success="right" for="orangeForm-pass">Password</label>
+                </div>
+
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <button class="btn btn-primary">Sign up</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- login and registration form ends here -->
 	
     <!-- header section start here -->
-	<section class="text-center">
-        <a href="http://"><img src="img/logo.png" alt="Binary Logic Information Technology,Dhaka." class="img-fluid"></a>
+	<section class="container text-center">
+        <a href=""><img src="img/logo.png" alt="Binary Logic Information Technology,Dhaka." class="img-fluid"></a>
 	</section>
     <!-- header section ends here -->
 	
@@ -186,10 +285,11 @@
 			</div>
 		</div>
     </section>
+	<!-- carousel ends here -->
     <!-- message and notice section starts here -->
     <section class="container">
-        <div class="row mt-2">
-            <div class="col-md-6 col-lg-4">
+        <div class="row mt-3">
+            <div class="col-md-12 col-lg-4">
                 <div class="card">
 					<p class="card-header"><a href="#">NOTICE BOARD</a></p>
 					
@@ -266,9 +366,9 @@
                 </div>
             </div>
 			
-			<div class="col-md-6 col-lg-4 mt-sm-2 mt-md-0">
+			<div class="col-md-12 col-lg-4 mt-sm-2 mt-md-0">
                 <div class="card  ">
-                    <p class="card-header"> <a href="#"> Message From Principal</a></p>
+                    <p class="card-header font-up"> <a href="#"> Message From Principal</a></p>
 					<div class="text-center ">
 						<img src="img/Principal.jpg" class="img-thumbnail">
 						<h4 class="card-title blockquote-footer">Md. Nurul Kabir</h4>
@@ -284,18 +384,16 @@
             </div>
 			
 			<div class="col-md-12 col-lg-4 mt-sm-2 mt-md-2 mt-lg-0 card">
-				<div class="">
 					<div class="">
-						<p class="card-header"> <a href="#">Result of previous semester</a></p>
+						<p class="card-header font-up"> <a href="#">Result of previous semester</a></p>
 						<div class="text-center ">
 							<img src="img/1.jpg" class="img-thumbnail my-2">
 										
 						</div>
 					</div>					
-				</div>
 			
 				<div class="row">
-					<div class="col-md-6 col-lg-12 mt-2">	
+					<div class="col-md-12 col-lg-12 mt-2">	
 						<div class="">
 							<table class="table table-bordered table-responsive table-lg-responsive  table-md-responsive table-sm">
 							  <thead>
@@ -347,18 +445,20 @@
 							</table>
 						</div>
 					</div>
-					<div class="col-md-6 col-lg-12 mb-2">
-						<p class="card-header"> <a href="#">Quick links</a></p>
+					<div class="col-md-12 col-lg-12 mb-2">
+						<p class="card-header font-up">QUICK LINKS</p>
 						<div class="d-flex flex-row flex-sm-row">
 							<a href="#"><img src="img/Campuses-n.png" alt="" class="img-thumbnail"></a>
 							<a href="#"><img src="img/Library-n.png" alt="" class="img-thumbnail"></a>
 							<a href="#"><img src="img/dsa-icon1.png" alt="" class="img-thumbnail"></a>
+							<a href="#" class="d-lg-none"><img src="img/dsa-icon1.png" alt="" class="img-thumbnail"></a>
 							
 						</div>
 						<div class="d-flex flex-row flex-sm-row">
 							<a href="#"><img src="img/Campuses-n.png" alt="" class="img-thumbnail"></a>
+							<a href="#"><img src="img/Campuses-n.png" alt="" class="img-thumbnail"></a>
 							<a href="#"><img src="img/Library-n.png" alt="" class="img-thumbnail"></a>
-							<a href="#"><img src="img/dsa-icon1.png" alt="" class="img-thumbnail"></a>
+							<a href="#" class="d-lg-none"><img src="img/dsa-icon1.png" alt="" class="img-thumbnail"></a>
 							
 						</div>
 					</div>
@@ -370,8 +470,8 @@
 	
 	<!-- Courses section starts here -->
 	<section class="container mt-lg-5 mt-md-4 mt-sm-3">
-        <h5 class="font-up font-weight-bold text-center text-primary">We Bring You The Best Courses From All The Top Institute, Absolutely FREE !</h5>
-		<p class="h6 text-center text-muted mb-2">Having over 9 million students worldwide and more than 50,000 online courses available.</p>
+        <h5 class="font-up font-weight-bold text-center text-primary">The Best Courses From All Others Top Institute !</h5>
+		<p class="h6 text-center text-muted mb-4">Having over 2 million students worldwide and more than 20 courses available.</p>
 		<div class="row my-2 text-center">
 			<div class="col-md-4 col-sm-6 col-lg-4 my-2">
 				<div class="community-edition">
@@ -428,7 +528,7 @@
 	<!-- popular-course section starts here -->
 <section class="popular-course py-3">  
 	<div class="container">
-		<h4 class="font-up font-weight-bold text-center pb-2 text-primary">OUR POPULAR COURSES</h4>
+		<h4 class="font-up font-weight-bold text-center pb-2 text-primary">OUR POPULAR Departments</h4>
 		<p class="h5 text-center pb-2 text-muted">The others comfortable these days are all happy and free</p>
 		<div class="row py-3">
 			<div class="py-2 col-12 col-md-6 col-lg-3">
@@ -436,8 +536,8 @@
 					<img class="img-responsive" src="img/desktop.png" alt="">
 					<div class="overlay">
 					   <h2 class="font-up font-weight-bold text-center">COMPUTER ENGINEERING</h2>
-					   <p class="info">Our sleek quality work and  synergized effect of our team’s creative mind have paved the way for offering innovative services to our clients.
-					   
+					   <p class="info text-justify">Our sleek quality work and  synergized effect of our team’s creative mind have paved the way for offering innovative services to our clients.
+					   <a href="#">Reade More</a>
 					  
 					   </p>
 					</div>
@@ -448,8 +548,8 @@
 					<img class="img-responsive" src="img/Architecture.jpg" alt="">
 					<div class="overlay">
 					   <h2 class="font-up font-weight-bold text-center">Architecture ENGINEERING</h2>
-					   <p class="info">Our sleek quality work and  synergized effect of our team’s creative mind have paved the way for offering innovative services to our clients.
-					    
+					   <p class="info text-justify">Our sleek quality work and  synergized effect of our team’s creative mind have paved the way for offering innovative services to our clients.
+					    <a href="#">Reade More</a>
 					</div>
 				</div>
 			</div>
@@ -458,8 +558,8 @@
 					<img class="img-responsive" src="img/Civil.jpg" alt="">
 					<div class="overlay">
 					   <h2 class="font-up font-weight-bold text-center">Civil ENGINEERING</h2>
-					   <p class="info">Our sleek quality work and  synergized effect of our team’s creative mind have paved the way for offering innovative services to our clients.
-					   
+					   <p class="info text-justify">Our sleek quality work and  synergized effect of our team’s creative mind have paved the way for offering innovative services to our clients.
+							<a href="#">Reade More</a>
 					</div>
 				</div>
 			</div>
@@ -468,8 +568,8 @@
 					<img class="img-responsive" src="img/Chemical-&-Food.jpg" alt="">
 					<div class="overlay">
 					   <h2 class="font-up font-weight-bold text-center">Chemical & Food ENGINEERING</h2>
-					   <p class="info">Our sleek quality work and  synergized effect of our team’s creative mind have paved the way for offering innovative services to our clients.
-					   
+					   <p class="info text-justify">Our sleek quality work and  synergized effect of our team’s creative mind have paved the way for offering innovative services to our clients.
+							<a href="#">Reade More</a>
 					</div>
 				</div>
 			</div>
@@ -480,8 +580,8 @@
 					<img class="img-responsive" src="img/Electrical.jpg" alt="">
 					<div class="overlay">
 					   <h2 class="font-up font-weight-bold text-center">Electrical ENGINEERING</h2>
-					   <p class="info">Our sleek quality work and  synergized effect of our team’s creative mind have paved the way for offering innovative services to our clients.
-					  
+					   <p class="info text-justify">Our sleek quality work and  synergized effect of our team’s creative mind have paved the way for offering innovative services to our clients.
+							<a href="#">Reade More</a>
 					</div>
 				</div>
 			</div> 
@@ -490,8 +590,8 @@
 					<img class="img-responsive" src="img/toolbox-2645700_1280.jpg" alt="">
 					<div class="overlay">
 					   <h2 class="font-up font-weight-bold text-center">Electronics ENGINEERING</h2>
-					   <p class="info">Our sleek quality work and  synergized effect of our team’s creative mind have paved the way for offering innovative services to our clients.
-				
+					   <p class="info text-justify">Our sleek quality work and  synergized effect of our team’s creative mind have paved the way for offering innovative services to our clients.
+							<a href="#">Reade More</a>
 					</div>
 				</div>
 			</div>
@@ -500,8 +600,8 @@
 					<img class="img-responsive" src="img/h3-slide-3.jpg" alt="">
 					<div class="overlay">
 					   <h2 class="font-up font-weight-bold text-center">Environmental ENGINEERING</h2>
-					   <p class="info">Our sleek quality work and  synergized effect of our team’s creative mind have paved the way for offering innovative services to our clients.
-					   
+					   <p class="info text-justify">Our sleek quality work and  synergized effect of our team’s creative mind have paved the way for offering innovative services to our clients.
+							<a href="#">Reade More</a>
 					</div>
 				</div>
 			</div>
@@ -510,8 +610,8 @@
 					<img class="img-responsive" src="img/Mechanical.jpg" alt="">
 					<div class="overlay">
 					   <h2 class="font-up font-weight-bold text-center">Mechanical ENGINEERING</h2>
-					   <p class="info">Our sleek quality work and  synergized effect of our team’s creative mind have paved the way for offering innovative services to our clients.
-					  
+					   <p class="info text-justify">Our sleek quality work and  synergized effect of our team’s creative mind have paved the way for offering innovative services to our clients.
+							<a href="#">Reade More</a>
 					</div>
 				</div>
 			</div>
@@ -527,7 +627,7 @@
 				<h3 class="font-up font-weight-bold text-center text-dark">Academic Support</h3>
 				<p class="h5 text-center pb-3">Sed maximus sodales nulla sollicitudin tincidunt. The others comfortable these days are all happy and free.</p>
           <div class="row">
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-md-12 col-lg-3">
 				<div class="card card-cascade wider">
 					<div class="view overlay hm-white-slight ">
 						<img src="img/Cloud-Library.jpg" class="img-fluid w-100 wow bounceIn">
@@ -540,7 +640,7 @@
 					</div>
 				</div>
             </div>  <!--/.Card Sapport ends-->
-            <div class="py-2 col-12 col-md-6 col-lg-3">
+            <div class="py-2 col-12 col-md-12 col-lg-3">
 				<div class="card card-cascade wider">
 					<div class="view overlay hm-white-slight ">
 						<img src="img/Video-Lessons.jpg" class="img-fluid w-100 wow bounceIn">
@@ -553,7 +653,7 @@
 					</div>
 				</div>
             </div>
-            <div class="py-2 col-12 col-md-6 col-lg-3">
+            <div class="py-2 col-12 col-md-12 col-lg-3">
 					<div class="card card-cascade wider">
 						<div class="view overlay hm-white-slight ">
 							<img src="img/support.jpg" class="img-fluid w-100 wow bounceIn">
@@ -566,7 +666,7 @@
 						</div>
 					</div>
             </div>
-			 <div class="py-2 col-12 col-md-6 col-lg-3">
+			 <div class="py-2 col-12 col-md-12 col-lg-3">
 					<div class="card card-cascade wider">
 					<div class="view overlay hm-white-slight ">
 						<img src="img/E-Learning.jpg" class="img-fluid w-100 wow bounceIn">
@@ -583,9 +683,237 @@
     </div>
 </section>
 <!-- Support section ends here -->
-	
-	
-	
+
+<!-- message and notice section starts here -->
+    <section class="container">
+        <div class="row mt-3">
+            <div class="col-md-12 col-lg-4">
+                <div class="card">
+					<p class="card-header"><a href="#">SEMINARS</a></p>
+					
+                    <div class="list-group">
+						  <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start">
+							<p class="mb-1">Free WordPress Seminar.</p>
+							<div class="d-flex w-100 justify-content-between">
+								<small>6 pm to 8 pm</small>
+								<small>24-Dec-17</small>
+							</div>
+						  </a>
+						  
+						  <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start">
+							<p class="mb-1">Free Web Design Seminar.</p>
+							<div class="d-flex w-100 justify-content-between">
+								<small>6 pm to 8 pm</small>
+								<small>26-Dec-17</small>
+							</div>
+						  </a>
+						  
+						  <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start">
+							<p class="mb-1">Free Logo Design Seminar.</p>
+							<div class="d-flex w-100 justify-content-between">
+								<small>6 pm to 8 pm</small>
+								<small>29-Dec-17</small>
+							</div>
+						  </a>
+						  
+						  <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start">
+							<p class="mb-1">Free Java Script Seminar.</p>
+							<div class="d-flex w-100 justify-content-between">
+								<small>3 pm to 5 pm</small>
+								<small>30-Dec-17</small>
+							</div>
+						  </a>
+						  
+						  <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start">
+							<p class="mb-1">Free Bootstrap Framework Seminar.</p>
+							<div class="d-flex w-100 justify-content-between">
+								<small>8 pm to 9 pm</small>
+								<small>30-Dec-17</small>
+							</div>
+						  </a>
+						  
+						  <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start">
+							<p class="mb-1">Free Web Developments Seminar.</p>
+							<div class="d-flex w-100 justify-content-between">
+								<small>10 am to 12 pm</small>
+								<small>02-Jan-17</small>
+							</div>
+						  </a>
+						  <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start">
+							<p class="mb-1">Free Technology Seminar.</p>
+							<div class="d-flex w-100 justify-content-between">
+								<small>3 pm to 4 pm</small>
+								<small>10-Feb-17</small>
+							</div>
+						  </a>
+						  
+					</div>     
+                </div>
+            </div>
+			
+			<div class="col-md-12 col-lg-5 mt-sm-2 mt-md-0">
+                <div class="card  ">
+                    <p class="card-header font-up"> <a href="#">News & Events</a></p>
+					
+                    <div class="card-body">
+                        <div class="list-group">
+						<small>10-Feb-18</small>
+							<a href="#!" class="list-group-item list-group-item-action list-group-item-info">Workshop on Questionnaire Development.</a>
+						</div>
+						<div class="list-group">
+						<small>13-Feb-18</small>
+							<a href="#!" class="list-group-item list-group-item-action list-group-item-info">Food Engineering & Technology Organized a day long Industrial Tour.</a>
+						</div>
+						<div class="list-group">
+						<small>21-Feb-18</small>
+							<a href="#!" class="list-group-item list-group-item-action list-group-item-info">Victory Day 2017 Discussion Program  </a>
+						</div>
+						<div class="list-group">
+						<small>23-Feb-18</small>
+							<a href="#!" class="list-group-item list-group-item-action list-group-item-info">English Department Day 2017  </a>
+						</div>
+						<div class="list-group">
+						<small>28-Feb-18</small>
+							<a href="#!" class="list-group-item list-group-item-action list-group-item-info">CSE Alumni Survey (IQAC) and CSE Alumni Get-Together 2017.  </a>
+						</div>
+						<div class="list-group">
+						<small>30-april-18</small>
+							<a href="#!" class="list-group-item list-group-item-action list-group-item-info">Workshop on “Sampling Technique”  </a>
+						</div>
+						
+                    </div>
+                </div>
+            </div>
+			
+			<div class="col-md-12 col-lg-3 mt-sm-2 mt-md-0">
+                <div class="card  ">
+                    <p class="card-header font-up"> <a href="#">Our Clubs</a></p>
+					
+                    <div class="card-body">
+                        <ul class="list-group">
+							  <li class="list-group-item d-flex justify-content-between align-items-center">
+								Sports Club
+								<span class="badge badge-primary badge-pill">1300</span>
+							  </li>
+							  <li class="list-group-item d-flex justify-content-between align-items-center">
+								Cine Club
+								<span class="badge badge-primary badge-pill">890</span>
+							  </li>
+							  <li class="list-group-item d-flex justify-content-between align-items-center">
+								Photography Club
+								<span class="badge badge-primary badge-pill">2892</span>
+							  </li>
+							  <li class="list-group-item d-flex justify-content-between align-items-center">
+								Computing Club
+								<span class="badge badge-primary badge-pill">4075</span>
+							  </li>
+							  <li class="list-group-item d-flex justify-content-between align-items-center">
+								Debating Society
+								<span class="badge badge-primary badge-pill">1784</span>
+							  </li>
+							  <li class="list-group-item d-flex justify-content-between align-items-center">
+								Music and Dance Club
+								<span class="badge badge-primary badge-pill">359</span>
+							  </li>
+							  <li class="list-group-item d-flex justify-content-between align-items-center">
+								Drama Club
+								<span class="badge badge-primary badge-pill">1207</span>
+							  </li>
+							  <li class="list-group-item d-flex justify-content-between align-items-center">
+								Club Society
+								<span class="badge badge-primary badge-pill">1784</span>
+							  </li>
+							  <li class="list-group-item d-flex justify-content-between align-items-center">
+								Dance Club
+								<span class="badge badge-primary badge-pill">253</span>
+							  </li>
+						</ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>	
+	<!-- message and notice section  ends here -->	
+
+<!--Footer-->
+<footer class="page-footer stylish-color-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-4">
+				<h6 class="title font-bold">ABOUT</h6>
+				<hr class="hr-light">
+                <div class="row">
+					<div class="col-md-3">
+						<img src="img/mini-logo.png" alt="mini-logo">
+					</div>
+					<div class="col-md-9">
+						<p>
+							Binary Logic Information Technology is a private university in BANGLA MOTOR- Dhaka, Bangladesh. It was established in 2007 under the Private University Act 1995.
+						</p>
+					</div>
+				</div>
+
+				<h6>FIND US ONLINE</h6>
+				<ul class="social-icon mb-2">
+    				<li><a href="https://www.facebook.com/sakhawath.hossain.906" class="fa fa-facebook"></a></li>
+    				<li><a href="#" class="fa fa-twitter"></a></li>
+    				<li><a href="#" class="fa fa-instagram"></a></li>
+    				<li><a href="#" class="fa fa-instagram"></a></li>
+    				<li><a href="#" class="fa fa-instagram"></a></li>
+    			</ul>	
+            </div>
+			
+            <hr class="hr-light">
+            <div class="mx-auto  col-md-12 col-lg-4">
+                <h6 class="title font-bold">OTHER LINKS</h6>
+				<hr class="hr-light">
+                <p><a href="http://www.moedu.gov.bd/" target="_blank">Ministry of Education</a></p>
+                <p><a href="http://www.techedu.gov.bd/" target="_blank">Directorate of Technical Education</a></p>
+                <p><a href="http://www.bteb.gov.bd/" target="_blank">Bangladesh Technical Education Board</a></p>
+                <p><a href="http://www.bcc.gov.bd/" target="_blank">Bangladesh Computer Council(BCC)</a></p>
+                <p><a href="http://www.duet.ac.bd/" target="_blank">DUET</a></p>
+            </div>
+            <hr class="hr-light">
+            <div class="col-md-12 col-lg-4">
+				<h6 class="title font-bold">ADDRESS</h6>
+				<hr class="hr-light">
+				<h5>OWN CAMPUS : </h5>
+				<address>
+					Kawran Bazar, Dhaka -1215, Bangladesh.
+				</address>
+				<!-- <h5>Bogra CAMPUS : </h5>
+				<address>
+					Kawran Bazar, Dhaka -1215, Bangladesh.
+				</address> -->
+				<h6>Landphone :</h6>
+				<address>+880-2-5001-5, 651111, 111198, 09712121
+				</address>
+				<h6>Hotline  :</h6>
+				<address>01812-000347 , 01722-374327<br>
+					<a href="https://mail.google.com/mail/u/0/#inbox">Email :info@blit.edu.bd</a>
+				</address>
+            </div>
+        </div>
+        <!-- Footer links ends -->
+        <hr class="hr-light">
+        <div class="row">
+            <div class="col-md-12 col-lg-6">
+				<!--Copyright-->
+                <p class="text-center grey-text">© 2017 Copyright: <a href="index.html" target="_blank"><strong> Binary Logic Information Technology</strong></a></p>
+                <!--/.Copyright-->
+            </div>
+            <div class="col-md-12 col-lg-6">
+                <!--Design by-->
+                <p class="text-center grey-text">Design & Developed By: <a href="https://www.facebook.com/sakhawath.hossain.906" target="_blank"><strong>Sakhawath Hossain</strong></a></p>
+                <!--/.Design by-->
+            </div>
+        </div>
+    </div>
+</footer>
+<!--/.Footer-->	
+
+
 	
     <!-- /Ends my project here-->
 

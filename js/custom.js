@@ -52,3 +52,57 @@ $(window).load(function(){
 	$('.preloader').fadeOut(1000); // set duration in brackets    
 });
 /* end preloader */
+
+
+
+
+
+
+jQuery(function ($) { "use strict";
+	
+	/* ========================================================================= */
+	/*	Page Preloader
+	/* ========================================================================= */
+	
+	window.onload = function () {
+		document.getElementById('loading-mask').style.display = 'none';
+	}
+
+	/* =========================================================================== */
+	/*	FitVids js
+	/* =========================================================================== */
+	
+	$(".media-wrapper").fitVids();
+
+	
+	/* ========================================================================= */
+	/*	Nice Scroll - Custom Scrollbar
+	/* ========================================================================= */
+
+	var nice = $("html").niceScroll({
+		cursorborderradius: 0,
+		cursorwidth: "8px",
+		cursorfixedheight: 150,
+		cursorcolor: "#6CB670",
+		zindex: 9999,
+		cursorborder: 0,
+	});
+
+
+	/* ========================================================================= */
+	/*	Scroll Up / Back to top
+	/* ========================================================================= */
+	
+	$(window).scroll(function() {
+		if ($(window).scrollTop() > 400) {
+			$("#scrollUp").fadeIn(200);
+		} else {
+			$("#scrollUp").fadeOut(200);
+		}
+	});
+	
+	$('#scrollUp').click(function() {
+		$('html, body').stop().animate({
+			scrollTop : 0
+		}, 1500, 'easeInOutExpo');
+	});
