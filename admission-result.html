@@ -24,6 +24,93 @@
 
 <body class="bg">
 
+
+<!-- login and registration form strats -->
+	<!-- login starts -->
+    <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+            <div class="modal-content">
+				<div class="modal-header text-center">
+					<h4 class="modal-title w-100 font-bold">Sign in</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body mx-3">
+					<div class="md-form">
+						<i class="fa fa-envelope prefix grey-text"></i>
+						<input type="email" id="defaultForm-email" class="form-control validate">
+						<label data-error="wrong" data-success="right" for="defaultForm-email">Username</label>
+					</div>
+					<div class="md-form">
+						<i class="fa fa-lock prefix grey-text"></i>
+						<input type="password" id="defaultForm-pass" class="form-control validate">
+						<label data-error="wrong" data-success="right" for="defaultForm-pass">Password</label>
+					</div>
+					<div class="form-check mb-2 mr-sm-2 mb-sm-0">
+						<label class="form-check-label">
+							<input class="form-check-input text-center" name="remember"type="checkbox" >
+							<span style="padding-bottom: .15rem">Remember me</span>
+						</label>
+					</div>
+				</div>
+				<div class="modal-footer d-flex justify-content-center">
+					<button class="btn btn-default" >Login</button>
+					<a class="" href="/password/reset">Forgot Your Password?</a>
+				</div>
+			</div>
+		</div>
+	</div> 
+	<!-- login ends -->
+	
+	<!-- registration starts -->	
+	<div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header text-center">
+					<h4 class="modal-title w-100 font-bold" >Sign up</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body mx-3">
+					<div class="md-form">
+						<i class="fa fa-user prefix grey-text"></i>
+						<input type="text" id="orangeForm-name" class="form-control validate">
+						<label data-error="wrong" data-success="right" for="orangeForm-name">Your Name</label>
+					</div>
+					<div class="md-form">
+						<i class="fa fa-envelope prefix grey-text"></i>
+						<input type="email" id="orangeForm-email" class="form-control validate">
+						<label data-error="wrong" data-success="right" for="orangeForm-email">Email Address</label>
+					</div>
+					<div class="text-center">
+						<label class="custom-control custom-radio">
+							<input id="radio1" name="radio" type="radio" class="custom-control-input">
+							<span class="custom-control-indicator"></span>
+							<span class="custom-control-description">Male</span>
+						</label>
+						<label class="custom-control custom-radio">
+							<input id="radio2" name="radio" type="radio" class="custom-control-input">
+							<span class="custom-control-indicator"></span>
+							<span class="custom-control-description">Female</span>
+						</label>
+					</div>
+				
+					<div class="md-form">
+						<i class="fa fa-lock prefix grey-text"></i>
+						<input type="password" id="orangeForm-pass" class="form-control validate">
+						<label data-error="wrong" data-success="right" for="orangeForm-pass">Password</label>
+					</div>
+				</div>
+				<div class="modal-footer d-flex justify-content-center">
+					<button class="btn btn-primary">Sign up</button>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- login and registration form ends here -->
+	
 <!-- header section start here -->
 	<section class="white text-center">
         <div class="container"> 
@@ -148,60 +235,61 @@
 	<div class="container">
 		<ol class="breadcrumb">
 			  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-			  <li class="breadcrumb-item"><a href="">Department</a></li>
-			  <li class="breadcrumb-item active">Electronics Engineering</li>
+			  <li class="breadcrumb-item"><a href="">Admission</a></li>
+			  <li class="breadcrumb-item active">Admission Notice</li>
 		</ol>
-	</div>	
-<!-- breadcrumb section starts Here -->
+<!-- breadcrumb section ends Here -->
 
-<!-- Electronics section starts Here -->
-	<section class="container-fluid">
-		<div class="row">
-			<div class="col-md-12 col-lg-4">
-				<div>
-					<h3 class="h4">Department of Electronics Engineering</h3>
-					<ul>
-						<li><a href="electronics.html">Department Home</a></li>
-						<li><a href="electronics-m-f-head.html">Message from Head</a></li>
-						<li><a href="electronics-mission.html">Mission</a></li>
-						<li><a href="electronics-vision.html">Vision</a></li>
-						<li><a href="electronics-faculty-member.html">Faculty Member</a></li>
-						<li><a href="electronics-officers.html">Officers</a></li>
-						<li><a href="electronics-curriculam.html">Curriculam</a></li>
-						<li><a href="electronics-class-routine.html">Class Routine</a></li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="col-md-12 col-lg-8">
-				<div>
-					<img class="img-thumbnail m-2 wow zoomInLeft" src="img/electronics.jpg" alt="Electronics Engineering">
-				</div>
-				<p class="h4">Department of Electronics Engineering :</p>
-
-				<p class="text-justify p-2">The department of Electronics Technology was established at <strong> Binary Logic Information Technology</strong> in 1995. This department offered 4 years Diploma-in-Engineering program under the Bangladesh Technical Education Board after 10 years schooling. The Department currently has roughly 15 faculty members (both full time and part time), 04 technical & support staff and 480 numbers of students (120 students per year, 60 for 1st and 60 for 2nd shift). In our admission criteria, there are 20% seats reserved for female student, 15% for Vocational and 5% for disable students.
-				</p>
-				<p class="text-justify p-2">After completion the Diploma-in-Engineering Program, students can go to Job market or higher education. For higher education they can admitted in Binary Logic Information Technology,Dhaka.(BLIT),or any other private or public university in home or abroad for Bachelor degree program like Bachelor of Electronics Engineering or Bachelor of Electronics or Bachelor of Information Technology etc. A Diploma Electronics graduate works as a Sub-assistant Engineer in public & private organization.
-				</p>
-				<p class="text-justify p-2"> The major job fields of a Electronics Diploma Graduate are Computer Software & Hardware companies, Telecommunication companies, Teachers of TVET institutions, BPO industries, IT sector of all kind of Government and private organization as an IT Officer or Network support Engineer.
-				</p>
-				<p class="text-justify p-2">Completion the Diploma-in-Engineering Program, students can go to Job market or higher education. For higher education they can admitted in Binary Logic Information Technology,Dhaka. or any other private or public university in home or abroad for Bachelor degree program like Bachelor of Electronics Engineering or Bachelor of Electronics Science or Bachelor of Information Technology etc.
-				</p>
-
-				<p class="h5">Scope of Electronics  Engineering</p>
-
-				<p class="text-justify p-2">The academic objectives of the Department of Electronics Engineering are to provide outstanding education and research programs that can:</p>
-				<ul>
-					<li>Promote a philosophy of learning with the development of a Electronics engineering student body to be prepared for their specific profession, for advanced studies and careers in research with multidisciplinary knowledge.</li>
-					<li>Provide a stimulating academic research environment for individuals who would be capable to work in both industry and academia, and would be the leaders in the demonstration of professional skills and in the development of new technology for the benefit of society.</li>
-					
-				</ul>
-			</div>
+<!-- admission-results section starts Here -->
+	<section>
+		<div class="container card">
+			<p class="card-header h3 bg-info text-white py-3">Results of Admission Test 2016-2017</p>
+			<div class="card-body text-justify">
+				 <table class="table table-hover table-responsive">
+					  <thead>
+							<tr>
+								  
+								  <th>Departments</th>
+								  <th>Provisionally selected candidates according to roll</th>
+								  <th>Waiting List</th>
+							</tr>
+					  </thead>
+					  <tbody>
+						<tr>
+							  <th scope="row">Architecture</th>
+							  <td><a href="doc/1543.pdf" target="_blank"><i class="fa fa-download" aria-hidden="true"> Click here</i></a></td>
+							  <td><a href="doc/1543.pdf" target="_blank"><i class="fa fa-download" aria-hidden="true"> Click here</i></a></td>
+							 
+							  
+						</tr>
+						<tr>
+							  <th scope="row">Electrical</th>
+								<td><a href="doc/1543.pdf" target="_blank"><i class="fa fa-download" aria-hidden="true"> Click here</i></a></td>
+								<td><a href="doc/1543.pdf" target="_blank"><i class="fa fa-download" aria-hidden="true"> Click here</i></a></td>
+						</tr>
+						<tr>
+							  <th scope="row">Computer</th>
+								<td><a href="doc/1543.pdf" target="_blank"><i class="fa fa-download" aria-hidden="true"> Click here</i></a></td>
+								<td><a href="doc/1543.pdf" target="_blank"><i class="fa fa-download" aria-hidden="true"> Click here</i></a></td>
+						</tr>
+						<tr>
+							  <th scope="row">Electronics</th>
+							<td><a href="doc/1543.pdf" target="_blank"><i class="fa fa-download" aria-hidden="true"> Click here</i></a></td>
+							<td><a href="doc/1543.pdf" target="_blank"><i class="fa fa-download" aria-hidden="true"> Click here</i></a></td>
+						</tr>
+						<tr>
+							  <th scope="row">Mechanical</th>
+							  <td><a href="doc/1543.pdf" target="_blank"><i class="fa fa-download" aria-hidden="true"> Click here</i></a></td>
+							  <td><a href="doc/1543.pdf" target="_blank"><i class="fa fa-download" aria-hidden="true"> Click here</i></a></td>
+						</tr>
+					  </tbody>
+					</table>
+					<p class="text-muted font-weight-bold">*  Classes of all Undergraduate & Graduate Programs will start from 27th January, 2018.</p>
+					<p class="text-muted font-weight-bold">* For Any Information Call +8801810000000</p>
+			</div> 
 		</div>
 	</section>
-<!-- Electronics section Ends Here -->
-		
-
+<!--admission-results section ends Here -->
 
 <!--Footer section start here-->
 	<footer class="page-footer stylish-color-dark">

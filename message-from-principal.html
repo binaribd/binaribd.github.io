@@ -24,6 +24,93 @@
 
 <body class="bg">
 
+
+<!-- login and registration form strats -->
+	<!-- login starts -->
+    <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+            <div class="modal-content">
+				<div class="modal-header text-center">
+					<h4 class="modal-title w-100 font-bold">Sign in</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body mx-3">
+					<div class="md-form">
+						<i class="fa fa-envelope prefix grey-text"></i>
+						<input type="email" id="defaultForm-email" class="form-control validate">
+						<label data-error="wrong" data-success="right" for="defaultForm-email">Username</label>
+					</div>
+					<div class="md-form">
+						<i class="fa fa-lock prefix grey-text"></i>
+						<input type="password" id="defaultForm-pass" class="form-control validate">
+						<label data-error="wrong" data-success="right" for="defaultForm-pass">Password</label>
+					</div>
+					<div class="form-check mb-2 mr-sm-2 mb-sm-0">
+						<label class="form-check-label">
+							<input class="form-check-input text-center" name="remember"type="checkbox" >
+							<span style="padding-bottom: .15rem">Remember me</span>
+						</label>
+					</div>
+				</div>
+				<div class="modal-footer d-flex justify-content-center">
+					<button class="btn btn-default" >Login</button>
+					<a class="" href="/password/reset">Forgot Your Password?</a>
+				</div>
+			</div>
+		</div>
+	</div> 
+	<!-- login ends -->
+	
+	<!-- registration starts -->	
+	<div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header text-center">
+					<h4 class="modal-title w-100 font-bold" >Sign up</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body mx-3">
+					<div class="md-form">
+						<i class="fa fa-user prefix grey-text"></i>
+						<input type="text" id="orangeForm-name" class="form-control validate">
+						<label data-error="wrong" data-success="right" for="orangeForm-name">Your Name</label>
+					</div>
+					<div class="md-form">
+						<i class="fa fa-envelope prefix grey-text"></i>
+						<input type="email" id="orangeForm-email" class="form-control validate">
+						<label data-error="wrong" data-success="right" for="orangeForm-email">Email Address</label>
+					</div>
+					<div class="text-center">
+						<label class="custom-control custom-radio">
+							<input id="radio1" name="radio" type="radio" class="custom-control-input">
+							<span class="custom-control-indicator"></span>
+							<span class="custom-control-description">Male</span>
+						</label>
+						<label class="custom-control custom-radio">
+							<input id="radio2" name="radio" type="radio" class="custom-control-input">
+							<span class="custom-control-indicator"></span>
+							<span class="custom-control-description">Female</span>
+						</label>
+					</div>
+				
+					<div class="md-form">
+						<i class="fa fa-lock prefix grey-text"></i>
+						<input type="password" id="orangeForm-pass" class="form-control validate">
+						<label data-error="wrong" data-success="right" for="orangeForm-pass">Password</label>
+					</div>
+				</div>
+				<div class="modal-footer d-flex justify-content-center">
+					<button class="btn btn-primary">Sign up</button>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- login and registration form ends here -->
+	
 <!-- header section start here -->
 	<section class="white text-center">
         <div class="container"> 
@@ -144,64 +231,38 @@
     </section>
 <!-- nav section ends here -->
 	
-<!-- breadcrumb section starts Here -->
+<!-- Message From Principal section starts Here -->
 	<div class="container">
-		<ol class="breadcrumb">
-			  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-			  <li class="breadcrumb-item"><a href="">Department</a></li>
-			  <li class="breadcrumb-item active">Electronics Engineering</li>
-		</ol>
-	</div>	
-<!-- breadcrumb section starts Here -->
-
-<!-- Electronics section starts Here -->
-	<section class="container-fluid">
-		<div class="row">
-			<div class="col-md-12 col-lg-4">
-				<div>
-					<h3 class="h4">Department of Electronics Engineering</h3>
-					<ul>
-						<li><a href="electronics.html">Department Home</a></li>
-						<li><a href="electronics-m-f-head.html">Message from Head</a></li>
-						<li><a href="electronics-mission.html">Mission</a></li>
-						<li><a href="electronics-vision.html">Vision</a></li>
-						<li><a href="electronics-faculty-member.html">Faculty Member</a></li>
-						<li><a href="electronics-officers.html">Officers</a></li>
-						<li><a href="electronics-curriculam.html">Curriculam</a></li>
-						<li><a href="electronics-class-routine.html">Class Routine</a></li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="col-md-12 col-lg-8">
-				<div>
-					<img class="img-thumbnail m-2 wow zoomInLeft" src="img/electronics.jpg" alt="Electronics Engineering">
-				</div>
-				<p class="h4">Department of Electronics Engineering :</p>
-
-				<p class="text-justify p-2">The department of Electronics Technology was established at <strong> Binary Logic Information Technology</strong> in 1995. This department offered 4 years Diploma-in-Engineering program under the Bangladesh Technical Education Board after 10 years schooling. The Department currently has roughly 15 faculty members (both full time and part time), 04 technical & support staff and 480 numbers of students (120 students per year, 60 for 1st and 60 for 2nd shift). In our admission criteria, there are 20% seats reserved for female student, 15% for Vocational and 5% for disable students.
-				</p>
-				<p class="text-justify p-2">After completion the Diploma-in-Engineering Program, students can go to Job market or higher education. For higher education they can admitted in Binary Logic Information Technology,Dhaka.(BLIT),or any other private or public university in home or abroad for Bachelor degree program like Bachelor of Electronics Engineering or Bachelor of Electronics or Bachelor of Information Technology etc. A Diploma Electronics graduate works as a Sub-assistant Engineer in public & private organization.
-				</p>
-				<p class="text-justify p-2"> The major job fields of a Electronics Diploma Graduate are Computer Software & Hardware companies, Telecommunication companies, Teachers of TVET institutions, BPO industries, IT sector of all kind of Government and private organization as an IT Officer or Network support Engineer.
-				</p>
-				<p class="text-justify p-2">Completion the Diploma-in-Engineering Program, students can go to Job market or higher education. For higher education they can admitted in Binary Logic Information Technology,Dhaka. or any other private or public university in home or abroad for Bachelor degree program like Bachelor of Electronics Engineering or Bachelor of Electronics Science or Bachelor of Information Technology etc.
-				</p>
-
-				<p class="h5">Scope of Electronics  Engineering</p>
-
-				<p class="text-justify p-2">The academic objectives of the Department of Electronics Engineering are to provide outstanding education and research programs that can:</p>
-				<ul>
-					<li>Promote a philosophy of learning with the development of a Electronics engineering student body to be prepared for their specific profession, for advanced studies and careers in research with multidisciplinary knowledge.</li>
-					<li>Provide a stimulating academic research environment for individuals who would be capable to work in both industry and academia, and would be the leaders in the demonstration of professional skills and in the development of new technology for the benefit of society.</li>
-					
-				</ul>
-			</div>
-		</div>
-	</section>
-<!-- Electronics section Ends Here -->
+				<ol class="breadcrumb">
+					  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+					  <li class="breadcrumb-item"><a href="#">About</a></li>
+					  <li class="breadcrumb-item"><a href="about-blit.html">About BLIT</a></li>
+					  <li class="breadcrumb-item active">Message From Principal</li>
+				</ol>
 		
+			<div class="card m-2">
+				<p class="card-header h2 bg-info text-white py-3">Message From Principal</p>
+                <div class="text-center mt-2"><img src="img/Principal.jpg" class="img-thumbnail wow zoomIn"></div>
+				
+					<div class="card-body wow fadeInUp">
+						<p class="text-justify p-2">Welcome to <a href="index.html">Binary Logic Information Technology, Dhaka</a>. We are in the era of globalization and the globalization in the sense of economy, education and other aspects. The system is changing and merging with the information superhighway. The demand of education has been changing with the aspect of global economy and adoption of new technology.</p>
+						<p class="text-justify p-2">BLIT is very concerned about the change of technology and the requirement of human resources in the global market and in view of that change different programs have been introduced and will be introduced in the coming days of BLIT. We are also concerned about the human resource demand for the local industry. Adaptation of new programs will enrich the human resource of Bangladesh and BLIT's one of the mottos is to convert people to human resources and build them for the local as well as overseas employment. </p>
+						<p class="text-justify p-2">Innovations in technology and communications have enabled the educational sector to expand its realm in providing education to a wider range of students in extensive areas.<a href="index.html">Binary Logic Information Technology, Dhaka</a> is dedicated to utilizing the latest technologies in its efforts to bring the best possible education to students all over the country. We provide them with the services and opportunities necessary to enable them to complete their respective educational programs successfully. </p>
+						<p class="text-justify p-2">BLIT believes in quality and genuine education and also aware of the phenomenon of genuine and quality education. Daffodil International University ensures experienced and rich faculties, updated curricula and modern environment. Faculties take a genuine interest in educational development of the students and because of the comfortable size of BLIT, it is able to provide students with genuine education and intellectual opportunities. In addition, our curricula provide numerous academic and career options for one's path to professionalism. Besides the academic opportunities, at BLIT students will also find a host of extracurricular activities to round out their collegiate experience and enrich their resume. </p>
+						<p class="text-justify p-1">The current time demand is to elevate a  university  to  international. standard. The standard has many dimensions: they include the materials which are studied; the courses which are offered; the students who are taught; the faculties who teach them and undertake research; the places where teaching takes place; the environment and context within which teaching and research are undertaken. Above all, international. zation is a state.</p>
 
+						<p class="text-justify p-1 font-weight-bold">I wish every success of all students in their educational and professional pursuits.</p>
+
+						<blockquote class="blockquote">
+							  <p class="mb-0">Engr. Ashutosh Nath</p>
+							  <footer class="blockquote-footer">Principal<br>
+								<cite title="Source Title">Binary Logic Information Technology.</cite>
+							  </footer>
+						</blockquote>				
+					</div>
+			</div>
+	</div>
+<!-- Message From Principal section ends Here -->
 
 <!--Footer section start here-->
 	<footer class="page-footer stylish-color-dark">
