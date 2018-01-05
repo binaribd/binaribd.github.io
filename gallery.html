@@ -16,10 +16,11 @@
     <link href="css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/hover.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
 	<link href="css/style.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
 </head>
-
+   
 <body>
 <!-- header section start here -->
 <section class="container-fluid">
@@ -135,50 +136,39 @@
 </section>
 <!-- nav section ends here -->
 	
-<!-- breadcrumb section starts Here -->
-<div class="container-fluid">
-	<ol class="breadcrumb">
-		<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-		<li class="breadcrumb-item"><a href="">Department</a></li>
-		<li class="breadcrumb-item"><a href="computer.html">Computer Engineering</a></li>
-		<li class="breadcrumb-item active">Message from Head</li>
-	</ol>
-</div>	
-<!-- breadcrumb section starts Here -->
-
-<!-- Computer Message from Head section starts Here -->
+<!-- GALLERY section starts here -->
 <section class="container-fluid">
-	<div class="row">
-		<div class="col-12 col-sm-12 col-md-12 col-lg-4">
-			<div class="department-style">
-				<h3 class="card-header h4 font-bold ">Computer Engineering</h3>
-				<ul class=" p-3">
-					<li><a href="computer.html">Department Home</a></li>
-					<li><a href="computer-m-f-head.html">Message from Head</a></li>
-					<li><a href="computer-mission.html">Mission</a></li>
-					<li><a href="computer-vision.html">Vision</a></li>
-					<li><a href="computer-faculty-member.html">Faculty Member</a></li>
-					<li><a href="computer-officers.html">Officers</a></li>
-					<li><a href="computer-curriculam.html">Curriculam</a></li>
-					<li><a href="computer-class-routine.html">Class Routine</a></li>
-				</ul>
+	<h2 class="card-header h5 font-bold darkblue">University GALLERY:</h2>
+	<div class="row justify-content-center">
+		<div class="col-md-8">
+			<div class="row">
+				<a href="https://i.imgur.com/UBJ1f1A.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+					<img src="https://i.imgur.com/Rz4duUX.jpg" class="img-fluid">
+				</a>
+				<a href="https://i.imgur.com/bMcYN6M.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+					<img src="https://i.imgur.com/u1difDL.jpg" class="img-fluid">
+				</a>
+				<a href="https://goo.gl/wURJmr" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+					<img src="https://unsplash.it/600.jpg?image=253" class="img-fluid">
+				</a>
 			</div>
-		</div>
-
-		<div class="col-12 col-sm-12 col-md-12 col-lg-8">
-			<p class="card-header h5 font-bold">Message From Head :</p>
-			<div class="card-body">
-				<div class="text-center float-left p-2 p-md-2 p-lg-3 ">
-					<img src="img/cmt-head.jpg" class="img-thumbnail" alt="Computer Head">
-				</div>
-				<p class="text-justify pt-lg-3">
-				Greetings! On behalf of the faculty members, staffs, and students of the Department of Computer Engineering (CSE) of <strong> Binary Logic Information Technology</strong>, I welcome you all to the creative world of IT (Information Technology). I am really happy for the excitement periods of the computer scientists for the last decade and the time ahead. Because I believe the CSE discipline has been widely recognized as an essential source and technique for the advancements in all spheres of human endeavor now and in future.</p>
-				<em><strong>Prof. Dr. Sajedul Islam</strong></em>
+			<div class="row">
+				<a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+					<img src="https://unsplash.it/600.jpg?image=254" class="img-fluid">
+				</a>
+				<a href="https://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+					<img src="https://unsplash.it/600.jpg?image=255" class="img-fluid">
+				</a>
+				<a href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+					<img src="https://unsplash.it/600.jpg?image=256" class="img-fluid">
+				</a>
 			</div>
 		</div>
 	</div>
+
+
 </section>
-<!-- Computer Message from Head section Ends Here -->
+<!-- GALLERY section ends here -->
 
 <!--Footer section start here-->
 <footer class="page-footer blue darken-4">
@@ -263,8 +253,14 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/mdb.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
 	<script src="js/typed.js"></script>
 	<script src="js/custom.js"></script>
-	
+	<script>
+	$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
+	</script>
 </body>
 </html>

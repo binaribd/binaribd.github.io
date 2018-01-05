@@ -1,16 +1,21 @@
 /* MY CUSTOM STYLES */
-*{margin:0;padding:0;text-decoration:}
-body{background:;font-family: 'Average Sans', sans-serif;font-family: 'Federo', sans-serif; color: #00008b;}
-a:hover {color: #D32F2F;text-decoration: ;cursor: pointer; content: ""!important;}
+*{margin:0;padding:0;text-decoration:none;}
+body {font-family:'Average Sans', sans-serif; font-family: 'Federo', sans-serif; color: #00008b;}
+a:hover {color: #D32F2F; cursor: pointer;}
 /*a {color: #00008b !important;}*/
 .darkblue {color: #00008b !important;}
 .font-bold {font-weight: 600; }
 
-  
+ .department-style {background: #2c9ed4;background: linear-gradient(to right, #27709e, #6275e3, #675df9, #718ee4, #27709e) ;
+ }
+ .department-style > h3 {color:#fff;}
+ .department-style ul li {list-style-type:none;}
+ .department-style ul li a {color: #fff; font-weight: 600;font-size:17px; padding-left:5px;}
+ .department-style ul li a:hover {color:#000; height: 100%;}
+
+ 
 /*header section css start here*/
-.head-style{height: ;background: #2c9ed4; /* For browsers that do not support gradients */
-background: linear-gradient(to right, #27709e, #6275e3, #675df9, #718ee4, #27709e) /* Standard syntax (must be last) */
-/*text-shadow: 1px 1px 2px #290D0D, 2px 2px 1px #101011;*/}
+.head-style{background: url(../img/university.png) no-repeat center 75%; /*background: #2c9ed4;  For browsers that do not support gradients *//*background: linear-gradient(to right, #27709e, #6275e3, #675df9, #718ee4, #27709e) /* Standard syntax (must be last) *//*text-shadow: 1px 1px 2px #290D0D, 2px 2px 1px #101011;*/}
 .hr-me {height: 2px;background: red; /* For browsers that do not support gradients */background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); /* Standard syntax (must be last) */}
 /*header section css ends here*/
 
@@ -30,15 +35,14 @@ nav{position:relative;width:980px;margin:0 auto;}
 #cssmenu #head-mobile{border:0;list-style:none;line-height:1;display:block;position:relative;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 #cssmenu:after,#cssmenu > ul:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}
 #cssmenu #head-mobile{display:none}
-#cssmenu{font-family:;background:;}
 #cssmenu > ul > li{float:left}
-#cssmenu > ul > li > a{padding:17px;font-size:15px;letter-spacing:px;text-decoration:none;color:#ddd;font-weight:700;text-shadow: 1px 1px 0 rgba(0, 0, 0, 1);}
+#cssmenu > ul > li > a{padding:17px;font-size:15px;text-decoration:none;color:#ddd;font-weight:700;text-shadow: 1px 1px 0 rgba(0, 0, 0, 1);}
 #cssmenu > ul > li:hover > a,
 #cssmenu ul li.active a{color: #a0ce4e;border-color: #a0ce4e;}
 #cssmenu > ul > li:hover,
 #cssmenu ul li.active:hover,
 #cssmenu ul li.active,
-#cssmenu ul li.has-sub.active:hover{background:!important;-webkit-transition:background .3s ease;-ms-transition:background .3s ease;transition:background .3s ease;}
+#cssmenu ul li.has-sub.active:hover{-webkit-transition:background .3s ease;-ms-transition:background .3s ease;transition:background .3s ease;}
 #cssmenu > ul > li.has-sub > a{padding-right:30px}
 #cssmenu > ul > li.has-sub > a:after{position:absolute;top:22px;right:11px;width:8px;height:2px;display:block;background:#ddd;content:''}
 #cssmenu > ul > li.has-sub > a:before{position:absolute;top:19px;right:14px;display:block;width:2px;height:8px;background:#ddd;
@@ -100,8 +104,8 @@ content:'';-webkit-transition:all .25s ease;-ms-transition:all .25s ease;transit
 
 
 /*carosol section Css starts Here */
-.zoomincarosol {width:;height:;text-align:center;background: url("");background-size: auto;background-attachment: fixed;background-repeat: repeat;position: relative;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;-webkit-animation: zoomin 10s ease-in infinite;animation: zoomin 10s ease-in infinite;transition: all .10s ease-in-out;overflow: hidden;}
-.zoomoutcarosol {width:;height:;text-align:center;background: none;-webkit-animation: zoomout 10s ease-in infinite;animation: zoomout 10s ease-in infinite;transition: all .5s ease-in-out;overflow: hidden;} 
+.zoomincarosol {text-align:center;background: url("");background-size: auto;background-attachment: fixed;background-repeat: repeat;position: relative;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;-webkit-animation: zoomin 10s ease-in infinite;animation: zoomin 10s ease-in infinite;transition: all .10s ease-in-out;overflow: hidden;}
+.zoomoutcarosol {text-align:center;background: none;-webkit-animation: zoomout 10s ease-in infinite;animation: zoomout 10s ease-in infinite;transition: all .5s ease-in-out;overflow: hidden;} 
 /* Zoom in Keyframes */
 @-webkit-keyframes zoomin {0% {transform: scale(1);}95% {transform: scale(1.3);}100% {transform: scale(1);}}
 @keyframes zoomin {0% {transform: scale(1);}95% {transform: scale(1.3);}100% {transform: scale(1);}} 
@@ -189,15 +193,15 @@ a.list-group-item-info:focus, a.list-group-item-info:hover, button.list-group-it
 /*Back To top social section Css starts Here  */
 .cd-top {display: inline-block;height: 40px;width: 40px;position: fixed;bottom: 40px;right: 10px;box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 /* image replacement properties */
-overflow: hidden;text-indent: 100%;white-space: nowrap;background: #0d47a1 url(../img/svg/cd-top-arrow.svg) no-repeat center 50%;border-radius:50px;visibility: hidden;opacity: 0;-webkit-transition: opacity .3s 0s, visibility 0s .3s;-moz-transition: opacity .3s 0s, visibility 0s .3s;transition: opacity .3s 0s, visibility 0s .3s;}
+overflow: hidden;text-indent: 100%;white-space: nowrap;background:red url(../img/svg/cd-top-arrow.svg) no-repeat center 50%;border-radius:50px;visibility: hidden;opacity: 0;-webkit-transition: opacity .3s 0s, visibility 0s .3s;-moz-transition: opacity .3s 0s, visibility 0s .3s;transition: opacity .3s 0s, visibility 0s .3s;}
 .cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {-webkit-transition: opacity .3s 0s, visibility 0s 0s;-moz-transition: opacity .3s 0s, visibility 0s 0s;transition: opacity .3s 0s, visibility 0s 0s;}
 .cd-top.cd-is-visible {
 /* the button becomes visible */visibility: visible;opacity: 1;}
 .cd-top.cd-fade-out {
-/* if the user keeps scrolling down, the button is out of focus and becomes less visible */opacity: .5;}
+/* if the user keeps scrolling down, the button is out of focus and becomes less visible */opacity: .7;}
 .no-touch .cd-top:hover {background-color: #e86256;opacity: 1;}
-@media only screen and (min-width: 768px) {.cd-top {right: 20px;bottom: 20px;}}
-@media only screen and (min-width: 1024px) {.cd-top {height: 60px;width: 60px;right: 30px;bottom: 30px;}}
+@media only screen and (min-width: 768px) {.cd-top {right: 10px;bottom: 10px;}}
+@media only screen and (min-width: 1024px) {.cd-top {height: 60px;width: 60px;right: 5px;bottom: 5px;}}
 /*Back To top social section Css starts Here  */
 
 
