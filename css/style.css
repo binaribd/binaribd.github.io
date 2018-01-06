@@ -1,4 +1,4 @@
-/* MY CUSTOM STYLES */
+/* BLIT CUSTOM STYLES */
 *{margin:0;padding:0;text-decoration:none;}
 body {font-family:'Average Sans', sans-serif; font-family: 'Federo', sans-serif; color: #00008b;}
 a:hover {color: #D32F2F; cursor: pointer;}
@@ -6,24 +6,18 @@ a:hover {color: #D32F2F; cursor: pointer;}
 .darkblue {color: #00008b !important;}
 .font-bold {font-weight: 600; }
 
- .department-style {background: #2c9ed4;background: linear-gradient(to right, #27709e, #6275e3, #675df9, #718ee4, #27709e) ;
- }
+/*department section css start here*/
+ .department-style {background:#2c9ed4;background:linear-gradient(to right, #27709e, #6275e3, #675df9, #718ee4, #27709e);}
  .department-style > h3 {color:#fff;}
  .department-style ul li {list-style-type:none;}
  .department-style ul li a {color: #fff; font-weight: 600;font-size:17px; padding-left:5px;}
  .department-style ul li a:hover {color:#000; height: 100%;}
+/*department section css start here*/
 
- 
 /*header section css start here*/
 .head-style{background: url(../img/university.png) no-repeat center 75%; /*background: #2c9ed4;  For browsers that do not support gradients *//*background: linear-gradient(to right, #27709e, #6275e3, #675df9, #718ee4, #27709e) /* Standard syntax (must be last) *//*text-shadow: 1px 1px 2px #290D0D, 2px 2px 1px #101011;*/}
 .hr-me {height: 2px;background: red; /* For browsers that do not support gradients */background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); /* Standard syntax (must be last) */}
 /*header section css ends here*/
-
-
-mg:hover {
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-}
 
 /* Navigation Menu Css Start Here */
 .sticky {position: fixed;top: 0;width: 100%;z-index:400!important;}
@@ -102,7 +96,6 @@ content:'';-webkit-transition:all .25s ease;-ms-transition:all .25s ease;transit
 #cssmenu > ul > li.has-sub > ul > li.active > a,#cssmenu > ul ul > li.has-sub > ul > li.active > a{border-top:none}}
 /* Navigation Menu Css ends Here */
 
-
 /*carosol section Css starts Here */
 .zoomincarosol {text-align:center;background: url("");background-size: auto;background-attachment: fixed;background-repeat: repeat;position: relative;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;-webkit-animation: zoomin 10s ease-in infinite;animation: zoomin 10s ease-in infinite;transition: all .10s ease-in-out;overflow: hidden;}
 .zoomoutcarosol {text-align:center;background: none;-webkit-animation: zoomout 10s ease-in infinite;animation: zoomout 10s ease-in infinite;transition: all .5s ease-in-out;overflow: hidden;} 
@@ -115,8 +108,6 @@ content:'';-webkit-transition:all .25s ease;-ms-transition:all .25s ease;transit
 @keyframes zoomout {0% {transform: scale(1);}95% {transform: scale(1.3);}100% {transform: scale(1);}}
 /*End of Zoom out Keyframes */
 /*carosol section Css ends Here */
-
-
 
 /* NOTICE section Css starts Here */
 .list-group-item-action:focus, .list-group-item-action:hover {color: #D32F2F;}
@@ -133,17 +124,7 @@ form.search button:hover {background: #0b7dda;}
 form.search::after {content: "";clear: both;display: table;}
 table.table a {color: #00008b;}
 table.table a:hover {color: #D32F2F;}
-
 /* NOTICE section Css Ends Here */
-
-/* Courses section Css start Here */
-
-
-
-
-/* Courses section Css Ends Here */
-
-
 
 /* popular-DEPARTMENTS section css starts here */
 .popular .popular2 {position: relative;width: 90%;border-radius: 50% !important;}
@@ -158,27 +139,15 @@ transition: .5s ease;}
   height: 100%;border-radius: 50% !important;}
 /* popular-DEPARTMENTS section css ends here */
 
-
 /* Academic Support section css ends here */
-.img-support {
-  padding: 5px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  transition: all 0.2s ease-in-out;
-  max-width: 100%;
-  height: auto;
-}
- .img-support:hover {
- box-shadow: 0 0 2px 1px rgba(0, 140, 186, 1);}
+.img-support {padding: 5px;background-color: #fff;border: 1px solid #ddd;border-radius: 4px;transition: all 0.2s ease-in-out;max-width: 100%;height: auto;}
+ .img-support:hover {box-shadow: 0 0 2px 1px rgba(0, 140, 186, 1);}
 /* Academic Support section css ends here */
-
 
 /* Upcoming News & Events section css starts here */
 a.list-group-item-info, button.list-group-item-info {color: #00008b;}
 a.list-group-item-info:focus, a.list-group-item-info:hover, button.list-group-item-info:focus, button.list-group-item-info:hover {color: #ff0000;background-color: #fff;}
 /* Upcoming News & Events section css ends here */
-
 
 /* social section Css starts Here  */
 .social-icon{position: relative;padding: 0;margin: 0;}
@@ -187,8 +156,6 @@ a.list-group-item-info:focus, a.list-group-item-info:hover, button.list-group-it
 .social-icon li a{border: 1px solid #fff;border-radius: 2px;color: #fff;width: 40px;height: 40px;line-height: 40px;text-align: center;text-decoration: none;-webkit-transition: all 0.4s ease-in-out;transition: all 0.4s ease-in-out;margin-right: 10px;}
 .social-icon li a:hover{background: #28a7e9;border-color: transparent;}
 /* social section Css ends Here  */
-
-
 
 /*Back To top social section Css starts Here  */
 .cd-top {display: inline-block;height: 40px;width: 40px;position: fixed;bottom: 40px;right: 10px;box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
@@ -204,26 +171,8 @@ overflow: hidden;text-indent: 100%;white-space: nowrap;background:red url(../img
 @media only screen and (min-width: 1024px) {.cd-top {height: 60px;width: 60px;right: 5px;bottom: 5px;}}
 /*Back To top social section Css starts Here  */
 
-
-
 /*login and registration form css strats Here  */
-.form-signin {max-width: 400px; display:block;background-color: #f7f7f7;-moz-box-shadow: 0 0 3px 3px #888;-webkit-box-shadow: 0 0 3px 3px #888;box-shadow: 0 0 3px 3px #888;border-radius:2px;}
-.main{padding: 38px;}
-.social-box{margin: 0 auto;padding: 38px;border-bottom:1px #ccc solid;}
-.social-box a{font-weight:bold;font-size:18px;padding:8px;}
-.social-box a i{font-weight:bold;font-size:20px;}
-.heading-desc{font-size:20px;font-weight:bold;padding:38px 38px 0px 38px;	}
-.form-signin .form-signin-heading,.form-signin .checkbox {margin-bottom: 10px;}
-.form-signin .checkbox {font-weight: normal;}
-.form-signin .form-control {position: relative;font-size: 16px;height: 20px;padding: 20px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
-.form-signin .form-control:focus {z-index: 2;}
-.form-signin input[type="text"] {margin-bottom: 10px;border-radius: 5px; }
-.form-signin input[type="password"] {margin-bottom: 10px;border-radius: 5px;}
-.login-footer{background:#f0f0f0;margin: 0 auto;border-top: 1px solid #dadada;padding:20px;}
-.login-footer .left-section a{font-weight:bold;color:#8a8a8a;line-height:19px;}
-.mg-btm{margin-bottom:20px;}
+.password {background-color:#f1f1f1;}
 /*login and registration form css strats Here  */
-
-
 
 .mt-col-2 {margin-top: 1rem !important;}
